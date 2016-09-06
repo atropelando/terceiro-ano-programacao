@@ -66,7 +66,8 @@ int main(void)
 	    if(opcao == 1)
 	    	f0(opcao);
 	    else if(opcao == 2) {
-	    	for (int i = 0; i < 4; ++i) {
+	    	int i;
+	    	for (i = 0; i < 4; ++i) {
 	    		f1(equipes[i]);
 	    	}
 	    }
@@ -170,7 +171,8 @@ void f7(int a) {
 	printf("Seu numero eh %d\n", a);
 }
 char *f8(void) {
-	for (int i = 0; i < 13; ++i)
+	int i;
+	for (i = 0; i < 13; ++i)
 	{
 		berto[i] += (i & 1);
 		printf("%d\n", (i & 1));
